@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(36, 33, 30);
+    color: aliceblue;
+}
+
+.app {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    align-items: center;
+}
+
+.contentTrending {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemTrending {
+    margin: 5px;
+    width: 18%;
+}
+
+.item {
+    margin: 5px;
+    width: 45%;
+
+}
+
+img {
+    max-height: 150px;
+    max-width: 95%;
+    width: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
