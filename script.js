@@ -4,7 +4,7 @@ var trending = document.getElementById("trending");
 var boton = document.getElementById("boton");
 var mp = document.getElementsByTagName("li");
 boton.addEventListener("click", buscar, false);
-
+let quees;
 
 //console.log(mp);
 /*
@@ -14,7 +14,7 @@ mp.forEach(element => {
 });*/
 
 trendingGIF();
-
+console.log(quees);
 keyword.value = "hasbulla";
 
 function buscar() {
@@ -40,7 +40,8 @@ function trendingGIF() {
         .then(response => {
             var { data } = response;
             var gifs = data.map(item => ("<div class='itemTrending'><img  src='" + item.images.downsized_medium.url + "' /></div>")).join('');
-            console.log(gifs);
+            //console.log(gifs);
             trending.innerHTML = gifs;
+             quees = gifs;
         })
 }
